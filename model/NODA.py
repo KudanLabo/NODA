@@ -4,7 +4,6 @@ import torch.nn as nn
 from layers.embed import TokenEmbedding_spatial, TokenEmbedding_temporal
 from layers.self_attention import (
     Geospatial_SelfAttention,
-    Relative_Temporal_SelfAttention,
     Spatial_SelfAttention,
     Temporal_SelfAttention,
 )
@@ -22,12 +21,7 @@ class Model(nn.Module):
         if args.use_only != "Spatial":
             self.temporal_embedding = TokenEmbedding_temporal(args.num_tiles**2, args.d_model)
 
-            if args.use_relativepos:
-                temporal_selfattention = Relative_Temporal_SelfAttention(
-                    args.d_model, args.n_head, args.seq_len + 1, args.save_outputs
-                )
-            else:
-                temporal_selfattention = Temporal_SelfAttention(args.d_model, args.n_head, args.save_outputs)
+            temporal_selfattention = Temporal_SelfAttention(args.d_model, args.n_head, args.save_outputs)
 
             temporal_encoder_layers = [
                 EncoderLayer(

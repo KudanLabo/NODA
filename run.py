@@ -21,7 +21,7 @@ def main():
     parser = argparse.ArgumentParser(description="Crowd Prediction")
 
     # exp config
-    parser.add_argument("--path", type=str, default="/content/NODA/", help="current directory")
+    parser.add_argument("--path", type=str, default="./", help="current directory")
     parser.add_argument("--model", type=str, default="NODA", help="model name")
     parser.add_argument("--sample_time", type=str, default="60min", help="sample time")
 
@@ -41,7 +41,6 @@ def main():
     parser.add_argument("--n_head", type=int, default=8)
     parser.add_argument("--temporal_num_layers", type=int, default=2)
     parser.add_argument("--spatial_num_layers", type=int, default=1)
-    parser.add_argument("--use_relativepos", action="store_true", help="BRPE")
     parser.add_argument("--use_kvr", action="store_true", help="KVR")
     parser.add_argument("--use_only", type=bool, default="None", help='["Spatial", "Temporal", "None"]')
 

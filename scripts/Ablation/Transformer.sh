@@ -13,7 +13,6 @@ python -u run.py \
   --n_head 8 \
   --temporal_num_layers 2 \
   --spatial_num_layers 1 \
-  --use_relativepos True \
   --use_kvr True \
   --use_only 'None'
 
@@ -32,7 +31,6 @@ python -u run.py \
   --n_head 8 \
   --temporal_num_layers 2 \
   --spatial_num_layers 1 \
-  --use_relativepos True \
   --use_kvr True \
   --use_only 'Spatial'
 
@@ -51,6 +49,5 @@ python -u run.py \
   --n_head 8 \
   --temporal_num_layers 2 \
   --spatial_num_layers 1 \
-  --use_relativepos True \
   --use_kvr True \
   --use_only 'Temporal'

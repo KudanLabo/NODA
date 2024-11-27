@@ -6,7 +6,7 @@ This repository is the official implementation of NODA in ''Neighbor Geospatial 
 <!-- img src="https://github.com/anonylabo/NODA/blob/main/figure/NODA.png" width="1000" alt="Figure" title="Architecture of NODA" -->
 <!-- /div -->
 
-[Appendix (PDF)](https://github.com/anonylabo/NODA/blob/main/Appendix.pdf) : The appendix include A) Related Work, B) Definitions, C) Algorithm, and D) Outline of the Baselines
+[Appendix (PDF)](https://github.com/KudanLabo/NODA/blob/main/Appendix.pdf) : The appendix include A) Related Work, B) Definitions, C) Algorithm, and D) Outline of the Baselines
 
 ## Requirements
 
